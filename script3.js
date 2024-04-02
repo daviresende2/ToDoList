@@ -1,9 +1,9 @@
     function addTask() {
-        const taskText = taskInput.value.trim();
+        let taskText = taskInput.value.trim();
         if (taskText === '') return;
 
         // Cria um novo item de lista (li) com input de texto e botões
-        const li = document.createElement('li');
+        let li = document.createElement('li');
         li.innerHTML = `
             <input type="text" value="${taskText}" readonly>
             <button class="edit" onclick="editTask(this)">Editar</button>
@@ -15,8 +15,8 @@
 
     // Função para editar uma tarefa
     function editTask(button) {
-        const li = button.parentElement;
-        const input = li.querySelector('input[type="text"]');
+        let li = button.parentElement;
+        let input = li.querySelector('input[type="text"]');
         if (input.hasAttribute('readonly')) {
             input.removeAttribute('readonly');
             button.textContent = 'Salvar';
@@ -28,6 +28,6 @@
 
     // Função para excluir uma tarefa
     function deleteTask(button) {
-        const li = button.parentElement;
+        let li = button.parentElement;
         li.remove(); // Remove o item da lista
     }
