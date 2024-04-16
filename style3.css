@@ -55,11 +55,11 @@ body {
     }
     /* Estilos para botão de editar */
     button.edit {
-        background-color: #00ff2f;
+        background-color: #1500ff;
         color: #fff;
     }
     /* Estilos para botão de excluir */
     button.delete {
-        background-color: #dc3545;
+        background-color: #dc35464f;
         color: #fff;
     }
